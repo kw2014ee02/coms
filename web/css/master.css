@@ -1,0 +1,299 @@
+﻿
+html
+{
+    overflow-y: scroll;
+}
+
+body
+{
+    background: #E2E4E0 url(images/body_bg.gif) repeat left top;
+    font-size: 10pt;
+    font-family: tahoma, arial;
+    margin: 10px 0px 0px 0px;
+    padding: 0px; /* Need to set body margin and padding to get consistency between browsers. */
+    text-align: center; /* Hack for IE5/Win */
+}
+
+.side_left
+{
+    background-image: url(images/left_back.gif);
+}
+
+.header_left
+{
+    background-image: url(images/header_1.gif);
+}
+
+.header_right
+{
+    background-image: url(images/header_2a.gif);
+}
+
+
+.no_header_left
+{
+    background-image: url(images/header_1_nologo.gif);
+}
+
+.no_header_right
+{
+    background-image: url(images/header_2_nologo.gif);
+}
+
+.side_right
+{
+    background-image: url(images/right_back.gif);
+}
+
+.footer_left
+{
+    background-image: url(images/footer-1.gif);
+}
+
+.footer_right
+{
+    background-image: url(images/footer-2.gif);
+}
+
+.grey1
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/grey1.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.grey2
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/grey2.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.grey3
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/grey3.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.grey4
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/grey4.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.blue1
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/blue1.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.blue2
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/blue2.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.blue3
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/blue3.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.blue4
+{
+    background-position: center center;
+    background-image: url(images/numeric_icons/blue4.gif);
+    background-repeat: no-repeat;
+    padding-right: 7px; 
+    padding-left: 7px; 
+    width: 33px; 
+    height: 33px;
+}
+
+.arrowLeft
+{
+    background-position: center center;
+    background-image: url(images/message_icons/Left49.png);
+    background-repeat: no-repeat;
+    padding-right: 0px; 
+    padding-left: 0px; 
+    width: 49px; 
+    height: 49px;
+}
+
+.arrowRight
+{
+    background-position: center center;
+    background-image: url(images/message_icons/Right49.png);
+    background-repeat: no-repeat;
+    padding-right: 0px; 
+    padding-left: 0px; 
+    width: 49px; 
+    height: 49px;
+}
+
+
+.mainTable
+{
+    border-top: 10px solid white;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+    padding: 0px;
+    width: 780px;
+}
+
+#content
+{
+    width: 780px;
+    margin: 0px auto;
+    text-align: left;
+    background-color: #fff;
+    color: #000;
+    font-family: tahoma, arial;
+    z-index: 10;
+}
+
+.ModalWindow
+{
+    border: solid 1px #c0c0c0;
+    background: #f0f0f0;
+    padding: 0px 10px 10px 10px;
+    position: absolute;
+    top: -1000px;
+}
+
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+
+.modalPopupButton
+{
+    width: 80px;
+    margin-left: -60px;
+}
+
+.modalPopupButton2
+{
+    width: 80px;
+    margin-left: 10px;
+}
+
+.modalPopupMessage, .modalPopupAttention, .modalPopupError, .modalPopupQuestion, .modalPopupMail
+{
+    vertical-align: text-top;
+    background-color: #ffffdd;
+    border: 3px solid gray; /* border-top: 20px solid gray; */
+    margin: 20px 0px;
+    padding: 20px 30px 10px 90px;
+    text-align: left;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+    font-weight: 700;
+    font-size: 10pt;
+    font-family: arial;
+}
+
+.modalPopupMessage
+{
+    background-image: url(../images/message_icons/info49.png);
+}
+
+.modalPopupAttention
+{
+    background-image: url(../images/message_icons/warning49.png);
+}
+
+.modalPopupError
+{
+    background-image: url(../images/message_icons/stop49.png);
+}
+
+.modalPopupQuestion
+{
+    background-image: url(../images/message_icons/help49.png);
+}
+
+.modalPopupMail
+{
+    background-image: url(../images/message_icons/mail49.png);
+}
+.watermarkText
+{
+    color: #808080;
+    font-style: italic;
+}
+
+/* Popup calendar (green) 
+
+.cal_Theme1 .ajax__calendar_container {padding:4px;position:absolute;cursor:default;width:172px;font-size:11px;text-align:center;font-family:tahoma,verdana,helvetica;}
+.cal_Theme1 .ajax__calendar_body {height:139px;width:172px;position:relative;overflow:hidden;margin:auto;}
+.cal_Theme1 .ajax__calendar_days, .ajax__calendar_months, .ajax__calendar_years {top:0px;left:0px;height:139px;width:172px;position:absolute;text-align:center;margin:auto;}
+.cal_Theme1 .ajax__calendar_container TABLE {font-size:11px;}
+.cal_Theme1 .ajax__calendar_header {height:20px;width:100%;}
+.cal_Theme1 .ajax__calendar_prev {cursor:pointer;width:15px;height:15px;float:left;background-repeat:no-repeat;background-position:50% 50%;background-image:url(<%=WebResource("AjaxControlToolkit.Calendar.arrow-left.gif")%>);}
+.cal_Theme1 .ajax__calendar_next {cursor:pointer;width:15px;height:15px;float:right;background-repeat:no-repeat;background-position:50% 50%;background-image:url(<%=WebResource("AjaxControlToolkit.Calendar.arrow-right.gif")%>);}
+.cal_Theme1 .ajax__calendar_title {cursor:pointer;font-weight:bold;}
+.cal_Theme1 .ajax__calendar_footer {height:15px;}
+.cal_Theme1 .ajax__calendar_today {cursor:pointer;padding-top:3px;}
+.cal_Theme1 .ajax__calendar_dayname {height:17px;width:17px;text-align:right;padding:0 2px;}
+.cal_Theme1 .ajax__calendar_day {height:15px;width:16px;text-align:right;padding:0 2px;cursor:pointer;}
+.cal_Theme1 .ajax__calendar_month {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+.cal_Theme1 .ajax__calendar_year {height:44px;width:40px;text-align:center;cursor:pointer;overflow:hidden;}
+
+.cal_Theme1 .ajax__calendar_container {background-color: #e2e2e2; border:solid 1px #cccccc;}
+.cal_Theme1 .ajax__calendar_header {background-color: #ffffff; margin-bottom: 4px;}
+.cal_Theme1 .ajax__calendar_title, .cal_Theme1 .ajax__calendar_next, .cal_Theme1 .ajax__calendar_prev {color: #016f54; padding-top: 3px;}
+.cal_Theme1 .ajax__calendar_body {background-color: #ffffff; border: solid 1px #cccccc;}
+.cal_Theme1 .ajax__calendar_dayname {text-align:center; font-weight:bold; margin-bottom: 4px; margin-top: 2px;}    
+.cal_Theme1 .ajax__calendar_day {text-align: center; border: 2px solid #ffffff; vertical-align: middle;}
+.cal_Theme1 .ajax__calendar_month {text-align:center; border:2px solid #ffffff;}
+.cal_Theme1 .ajax__calendar_year {text-align:center; border:2px solid #ffffff;}
+.cal_Theme1 .ajax__calendar_active .ajax__calendar_day {font-weight: bold; color: #ffffff; border-color: #016f54; background-color: #016f54;}     
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_day {font-weight: bold; color: #000000; border-color: #016f54; background-color: #ffffff; }
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_month {color: #000000; border-color: #016f54; background-color: #ffffff; }
+.cal_Theme1 .ajax__calendar_hover .ajax__calendar_year {color: #000000; border-color: #016f54; background-color: #ffffff; }
+.cal_Theme1 .ajax__calendar_today {font-weight:bold;}  
+.cal_Theme1 .ajax__calendar_other, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_today, .cal_Theme1 .ajax__calendar_hover .ajax__calendar_title {color: #bbbbbb;}
+
+
+
+
+*/
+

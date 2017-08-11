@@ -1,0 +1,113 @@
+
+/* The Modal (background) */
+#myModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(255,255,255,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#myModal .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 18%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    margin-top:5%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: -8%;
+}
+
+#myModal .close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myModal input[type=button]:hover,
+input[type=button]:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background-color:#5cb85c;
+}
+
+#myModal .modal-header {
+    padding: 1% 10%;
+    background-color: #5cb85c;
+    color: white;
+    left: 30px;
+  
+}
+
+#myModal .modal-body {padding: 3% 10%;;}
+
+#myModal .modal-footer {
+    padding: 3% 10%;
+    background-color: #5cb85c;
+    color: white;
+}
+
+
+#myModal input{
+    width:90%;
+    height:40px;
+    margin-top:5px;
+    border:1px solid #999;
+    border-radius:3px;
+    padding:5px;
+
+}
+#myModal input[type=button]{
+    background-color:#123456;
+    border:1px solid white;
+    font-family: 'Fauna One', serif;
+    font-size:18px;
+    color:white;
+    width:40%;
+    margin-left: 0%;
+    transition: all 0.3s ease 0s;
+
+}
+
+#myModal label {
+    color: #555;
+    display: inline-block;
+    margin-left: 0%;
+    padding-top: 5%;
+    font-size: 14px;
+    font-weight:  900;
+}

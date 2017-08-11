@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js" ></script>
+        <script src="http://malsup.github.com/jquery.form.js" ></script>
+
+
+        <style>
+            #file_choose_btn{
+                top: 10%;
+            }
+            #file_upload_btn{
+                margin-left: 10%;
+                margin-top: 10%;
+            }
+
+            .progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+            .bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+            .percent { position:absolute; display:inline-block; top:3px; left:48%; }
+        </style>
+
+        <script>
+            $(document).ready(function () {
+                var bar = $('.bar');
+                var percent = $('.percent');
+                var status = $('#status');
+
+                $('form').ajaxForm({
+                    beforeSend: function () {
+                        status.empty();
+                        var percentVal = '0%';
+                        bar.width(percentVal);
+                        percent.html(percentVal);
+                    },
+                    uploadProgress: function (event, position, total, percentComplete) {
+                        var percentVal = percentComplete + '%';
+                        bar.width(percentVal);
+                        percent.html(percentVal);
+                        //console.log(percentVal, position, total);
+                    },
+                    success: function () {
+                        var percentVal = '100%';
+                        bar.width(percentVal);
+                        percent.html(percentVal);
+                    },
+                    complete: function (xhr) {
+                        status.html(xhr.responseText);
+                    }
+                });
+
+            });
+        </script>
+
+    </head>
+    <body>
+        <h1>File Upload Progress Demo #2</h1>
+        <code>&lt;input type="file" name="myfile[]" multiple></code>
+        <form action="UploadFile" method="post" enctype="multipart/form-data">
+            <input type="file" id="file_choose_btn" name="myfile[]" multiple><br>
+            <input type="submit" id="file_upload_btn" value="Upload File to Server">
+        </form>
+
+        <div class="progress">
+            <div class="bar"></div >
+            <div class="percent">0%</div >
+        </div>
+
+        <div id="status"></div>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">       
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $("#test_1").click(function (e) {
+                    // alert("goooo");
+                    $("#mask").css("display", "block");
+                    $("#login").css("display", "block");
+
+                });
+                $("#test_2").click(function (e) {
+                     alert("goooo");
+                   
+                });
+                $("#login #cancel").click(function () {
+                    //alert("login cancell");
+                    $(this).parent().hide();
+                    $("#mask").css("display", "none");
+
+                });
+            });
+
+        </script>
+
+        <style>
+            .login_form{
+                border-radius:2px;
+                padding:20px 30px;
+                box-shadow:0 0 15px;
+                font-size:14px;
+                font-weight:bold;
+                width:350px;
+                margin:20px 250px 0 35px;
+                float:left;
+            }
+            #login input{
+                width:100%;
+                height:35px;
+                margin-top:5px;
+                border:1px solid #999;
+                border-radius:3px;
+                padding:5px;
+            }
+            #login input[type=button]{
+                background-color:#123456;
+                border:1px solid white;
+                font-family: 'Fauna One', serif;
+                font-Weight:bold;
+                font-size:18px;
+                color:white;
+                width:49%;
+            }
+            #logindiv{
+                position: fixed;
+                width: 340px;
+                height: 280px;
+                top: 50%;
+                left: 50%;
+                margin-top: -140px;
+                margin-left: -170px;
+                background: #fff;
+                border-radius: 3px;
+                border: 1px solid #ccc;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+                -webkit-animation-name: bounceIn;
+                -webkit-animation-fill-mode: both;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: bounceIn;
+                -moz-animation-fill-mode: both;
+                -moz-animation-duration: 1s;
+                -moz-animation-iteration-count: 1;
+                -moz-animation-timing-function: linear;
+                animation-name: bounceIn;
+                animation-fill-mode: both;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+
+
+                display: none;
+
+
+
+            }
+
+            
+            #mask{                      
+                position: fixed;
+                border: 0px solid red;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                background-color: rgba(255, 255, 255, 0.5);
+                display: none;
+
+
+                box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+                -webkit-animation-name: bounceIn;
+                -webkit-animation-fill-mode: both;
+                -webkit-animation-duration: 1s;
+                -webkit-animation-iteration-count: 1;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: bounceIn;
+                -moz-animation-fill-mode: both;
+                -moz-animation-duration: 1s;
+                -moz-animation-iteration-count: 1;
+                -moz-animation-timing-function: linear;
+                animation-name: bounceIn;
+                animation-fill-mode: both;
+                animation-duration: 1s;
+                animation-iteration-count: 1;
+                animation-timing-function: linear;
+
+            }
+
+
+            /*
+                        #logindiv{
+                            opacity:0.60;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            height: 100%;
+                            width: 100%;
+                            background: #000;
+                            display: none;
+                        }
+            */
+
+            #login{
+                width:350px;
+                margin:0px;
+                background-color:white;
+                font-family: 'Fauna One', serif;
+                position: relative;
+                border: 5px solid rgb(90, 158, 181);
+                display: none;
+            }
+
+
+            #login{
+                position: absolute;
+
+                margin-left:40%;
+                margin-top:10%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="submit" id="test_1" name="test_1" class="test_1" />
+
+  
+        
+        <div id="mask"> </div>
+
+        <!-- 
+         <div id="logindiv" >  </div> 
+        -->  
+
+        <form class="login_form" action="#" id="login">
+            <h3>Login Form</h3>
+            <hr/><br/>
+            <label>Username : </label>
+            <br/>
+            <input type="text" id="username" placeholder="Ex -john123"/><br/>
+            <br/>
+            <label>password : </label>
+            <br/>
+            <input type="password" id="password" placeholder="************"/><br/>
+            <br/>
+            <input type="button" id="loginbtn" value="Login"/>
+            <input type="button" id="cancel" value="Cancel"/>
+            <br/>
+
+        </form>
+
+
+    </body>
+</html>

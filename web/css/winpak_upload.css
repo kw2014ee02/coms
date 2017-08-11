@@ -1,0 +1,75 @@
+.progress { 
+    position:relative; 
+    width:40%; 
+    border: 1px solid #ddd; 
+    padding: 1px; 
+    border-radius: 3px; 
+    left: 55%;
+    top: 57%;
+}
+.bar { 
+    background-color: #B4F5B4; 
+    width:0%; 
+    height:20px; 
+    border-radius: 3px; 
+}
+.percent { 
+    position:absolute; 
+    display:inline-block; 
+    top: -180%; 
+    left: 45%; }
+
+#file_browse_btn{
+    position: absolute;
+    top: 10%;
+    left: 55%;  
+    width: 41%;
+    height: 30px;
+
+}
+
+#upload_btn{
+    position: absolute;
+    top: 80%;
+    left: 54.8%;   
+    height: 10%;
+    width: 41.2%;
+    color:  white;
+
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
+    background: #bfd255; /* Old browsers */
+    background: -moz-linear-gradient(top,  #bfd255 0%, #8eb92a 50%, #72aa00 51%, #9ecb2d 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #bfd255 0%,#8eb92a 50%,#72aa00 51%,#9ecb2d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+
+
+#div_upload_list{
+
+    position: absolute;
+    top: 20%;
+    left: 55%;  
+    width: 40.5%;
+    height: 60%;
+
+    border-top:1px #999999 solid;
+    border-left:1px #999999 solid;
+    border-right:1px #999999 solid;
+    overflow: auto;
+
+   
+}
+
+
+
+
+
+
+
+

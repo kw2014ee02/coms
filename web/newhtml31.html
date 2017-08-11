@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+            function mytest1() {
+                var Excel, Book;	// Declare the variables
+                Excel = new ActiveXObject("Excel.Application");	// Create the Excel application object.
+                Excel.Visible = false;	// Make Excel invisible.
+                Book = Excel.Workbooks.Add();	// Create a new work book.
+                Book.ActiveSheet.Cells(1, 1).Value = document.all.my_textarea1.value;
+                Book.SaveAs("C:/Documents and Settings/ProGamer/Desktop/word to text/TEST.xls");
+                Excel.Quit();	// Close Excel with the Quit method on the Application object.
+            }
+
+            function mytest2() {
+                var Excel;
+                Excel = new ActiveXObject("Excel.Application");
+                Excel.Visible = true;
+                form1.my_textarea2.value = Excel.Workbooks.Open("C:/Users/w15rdknl/Desktop/Digital/original/1st Time Sales Order Form.xls").ActiveSheet.Cells(1, 1).Value;
+                Excel.Quit();
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <form name="form1">
+            <input type=button onClick="mytest1();" value="Send Excel Data"><input type=text name="my_textarea1" size=70 value="enter ur data here">
+            <br><br>
+            <input type=button onClick="mytest2();" value="Get Excel Data"><input type=text name="my_textarea2" size=70  value="no data collected yet">
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,193 @@
+
+
+#tbl_header {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#tbl_header th{
+    text-align: left;
+    padding: 3px;
+}
+
+#tbl_header td{
+    height:2px;
+}
+#tbl_header th{
+    height: 2px;
+    color: white;
+
+    /*
+    background: #4CAF50;
+
+    background: -moz-linear-gradient(90deg, rgb(230, 16,21) 30%, rgb(81, 4, 7) 70%);
+    background: -webkit-linear-gradient(90deg, rgb(130, 16,21) 30%, rgb(81, 4, 7) 70%);
+    background: -o-linear-gradient(90deg, rgb(230, 16,21) 30%, rgb(81, 4, 7) 70%);
+    background: -ms-linear-gradient(90deg, rgb(230, 16,21) 30%, rgb(81, 4, 7) 70%);
+    background: linear-gradient(180deg, rgb(230, 16,21) 30%, rgb(81, 4, 7) 70%);
+    text-shadow: 1px 1px 5px #000;
+
+    */
+
+
+    /*  table header  */
+
+    background: rgba(183,222,237,1);
+    background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(50%, rgba(113,206,239,1)), color-stop(51%, rgba(33,180,226,1)), color-stop(100%, rgba(183,222,237,1)));
+    background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 50%, rgba(33,180,226,1) 51%, rgba(183,222,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0 );
+
+
+
+
+
+}
+/*
+#tbl_header th:nth-child(2){
+    min-width: 200px;
+}
+*/
+
+#tbl_header th:last-child{
+    width: 175px;
+}
+
+#tbl_header th:nth-child(3){
+    width: 93px;
+}
+
+#tbl_header th:nth-child(2){
+    width: 66px;
+}
+
+#tbl_header th:first-child{
+    width:5px;
+}
+
+#tbl_header td{
+
+    border:1px solid  #99ccff;
+
+}
+
+#tbl_header th{
+    border-top: 1px solid  rgba(183,222,237,1);
+    border-left:1px solid  rgba(183,222,237,1);
+    border-right:1px solid rgba(183,222,237,1);
+
+
+    border: 1px solid rgba(183,222,237,1);
+
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bounceIn;
+    -moz-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+
+/* table body */
+
+#tbl {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#tbl th, #tbl td {
+    text-align: left;
+    padding: 3px;
+}
+/* 
+#tbl tr:nth-child(even){background-color: #f2f2f2}
+*/
+
+.odd{ background-color: #feffff;}
+.even{ background-color: #feffff; }
+
+#tbl td{
+    height:15px;
+}
+#tbl th{
+    height: 2px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*
+#tbl th:nth-child(2){
+    min-width: 200px;
+}
+*/
+
+#tbl th, #tbl td:last-child{
+    width: 50%;
+}
+
+#tbl th, #tbl td:nth-child(3){
+    width: 23%;
+}
+
+#tbl th, #tbl td:nth-child(2){
+    width: 23%;
+}
+
+#tbl th, #tbl td:first-child{
+    width: 4%;
+}
+
+
+
+#tbl td{
+
+    border: 1px solid rgba(183,222,237,1);
+
+/*
+    box-shadow: 10px 10px 10px  rgba(183,222,237,1);
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bounceIn;
+    -moz-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    */
+
+}
+
+#tbl th{
+    border-bottom: 1px solid  #0078ae;
+    border-left:1px solid  #0078ae;
+    border-right:1px solid  #0078ae;
+
+
+}
+

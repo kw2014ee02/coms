@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            div {
+                color: blue;
+            }
+            div#five {
+                color: red;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="four"></div>
+        <div id="five"></div>
+
+        <script>
+            var arr = ["one", "two", "three", "four", "five"];
+            var obj = {one: 1, two: 2, three: 3, four: 4, five: 5};
+
+            jQuery.each(arr, function (i, val) {
+                $("#" + val).text("Mine is " + val + ".");
+
+                // Will stop running after "three"
+                return (val !== "three");
+            });
+
+            jQuery.each(obj, function (i, val) {
+                $("#" + i).append(document.createTextNode(" - " + val));
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+.ui-jqgrid{
+    margin:0 auto;
+    border: 1px solid red;
+
+}
+.ui-jqgrid-htable th.ui-th-column {
+    border-bottom: 0 none;
+    border-top: 0 none;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    background: yellow;
+    color:#84563c;
+    font-weight: bold;
+}
+
+
+.ui-jqgrid .ui-jqgrid-title {
+    border : 1px solid red;
+    background: none;
+    color:white;
+    margin: 0 auto;
+    margin-left: 1%;
+    font-weight: 900;
+    font-size: large;
+}
+
+.ui-jqgrid .ui-jqgrid-titlebar{
+    background: #27b7ec;
+    border: 1px solid red;
+    
+}
+
+.ui-jqgrid .ui-jqgrid-titlebar-close:hover { background: none; border: none; }
+
+
+.ui-jqgrid .ui-jqgrid-titlebar-close { position: absolute;top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height:18px;}
+.ui-jqgrid .ui-jqgrid-titlebar-close span { display: block; margin: 1px;  }
+
+/*
+.ui-jqgrid .ui-jqgrid-view:hover{
+    border : 8px solid blue;
+   background: green;
+    
+}
+*/
+
+.ui-jqgrid tr.jqgrow:hover{
+    border : 8px solid blue;
+   background: #84563c;
+   color: white;
+}
+
+
+
+
+
+
+

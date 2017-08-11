@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                var upload_btn = document.getElementById('upload_btn_1');
+                upload_btn.onclick = function () {
+                    alert("ggg");
+                    $.ajax({
+                        type: "GET",
+                        // url: "Item_in_transit_by_jsonp",
+                        url: "http://128.1.10.116:8080/winpak/FileUploadHandler"
+                    });
+                };
+
+            });
+        </script>
+
+        <script>
+            function handleFileSelect(evt) {
+                var files = evt.target.files; // FileList object
+
+                // files is a FileList of File objects. List some properties.
+                var output = [];
+                for (var i = 0, f; f = files[i]; i++) {
+                    output.push('<li><strong>', escape(f.name), '</strong> (', f.type || 'n/a', ') - ',
+                            f.size, ' bytes, last modified: ',
+                            f.lastModifiedDate ? f.lastModifiedDate.toLocaleDateString() : 'n/a',
+                            '</li>');
+                }
+                document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
+            }
+
+            document.getElementById('files').addEventListener('change', handleFileSelect, false);
+        </script>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div>
+            <h3> Choose File to Upload in Server </h3>
+
+            <!--
+             <form action="FileUploadHandler" method="post" enctype="multipart/form-data">
+                 <input type="file" name="file" />
+                 <input type="submit" value="upload" />
+             </form>          
+            -->
+
+            <!--
+            <input type="file" name="file" />
+            <input type="button" id="upload_btn_1" value="upload" />
+            -->
+
+            <form action="FileUploadHandler" method="post" enctype="multipart/form-data">
+
+                <input type="file" id="files" name="files[]" multiple />
+                <output id="list"></output>
+
+               
+                <input type="submit" value="upload" />
+            </form>   
+
+        </div>
+    </body>
+</html>

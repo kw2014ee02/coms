@@ -1,0 +1,918 @@
+
+body {
+    background: #E2E4E0 url(../images/body_bg.gif) repeat left top; 
+	FONT-SIZE: 10pt;
+    FONT-FAMILY: tahoma, arial;
+    margin:10px 0px;
+    padding:0px; /* Need to set body margin and padding to get consistency between browsers. */
+	text-align:center; /* Hack for IE5/Win */
+	}
+
+.tableTDleft {
+
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma,Verdana,Arial,Helvetica;
+    TEXT-ALIGN: center;
+    VERTICAL-ALIGN: TOP;
+    BORDER-RIGHT: 0.75pt outset;
+    PADDING-RIGHT: 5px;
+    BORDER-TOP: 0.75pt outset;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 3px;
+    BORDER-LEFT: 0.75pt outset;
+    PADDING-TOP: 3px;
+    BORDER-BOTTOM: 0.75pt outset;
+
+}
+
+.ModalWindow
+{
+    border: solid 1px #c0c0c0;
+    background:#f0f0f0;
+    padding: 0px 10px 10px 10px;
+    position:absolute;
+    top:-1000px;
+}
+
+.modalBackground
+{
+    background-color: Gray; 
+    filter: alpha(opacity=40);
+    opacity: 0.4; 
+}
+ 
+.modalPopupMessage, .modalPopupAttention, .modalPopupError 
+{
+    vertical-align: text-top;
+    background-color: #ffffdd; 
+    border: 3px solid gray;
+    /* border-top: 20px solid gray; */
+    margin: 20px 0px;
+    padding:30px 10px 20px 90px;
+    text-align: left;
+    width: 350px;    
+    background-repeat: no-repeat;
+    background-position: 20px 20px;  
+}
+
+.modalPopupAttention
+{
+    vertical-align: text-top;
+    background-color: #ffffdd; 
+    border: 3px solid gray;
+    /* border-top: 20px solid gray; */
+    margin: 0px;
+    padding:30px 10px 20px 90px;
+    text-align: left;
+    width: 350px;    
+    background-repeat: no-repeat;
+    background-position: 20px 20px;  
+}
+
+.modalPopupHeader
+{
+    border-style: solid solid none solid;
+    border-width: 3px;
+    border-color: gray;
+    vertical-align: text-top;
+    background-color: #CCFFFF; /* border-top: 20px solid gray; */
+    margin: 0px;
+    padding: 0px 90px 0px 10px;
+    text-align: left;
+    width: 350px;
+    background-repeat: no-repeat;
+    background-position: 1px 20px;
+    font-weight: 700;
+}
+
+.modalPopupButton 
+{
+    width: 80px; 
+    margin-left: -80px;
+    
+
+}
+
+.modalPopupMessage
+{
+   
+    background-image: url(../images/message_icons/info49.png);
+ 
+}
+
+.modalPopupAttention
+{
+   
+    background-image: url(../images/message_icons/warning49.png);
+ 
+}
+
+.modalPopupError
+{
+   
+    background-image: url(../images/message_icons/stop49.png);
+ 
+}
+
+
+
+.checkbox {
+    /* border: 1px solid highlight; */
+}
+
+.checkboxSelected {
+    /* background: highlight; */
+   border: 0px solid highlight;
+ /* Color: #800000; */
+}
+
+
+a.red {
+    Color: #800000;
+}
+
+a.red:hover {
+    Color: highlighttext;
+    BACKGROUND: highlight;
+}
+
+a.green {
+    Color: #016f54;
+}
+
+a.green:hover {
+    Color: highlighttext;
+    BACKGROUND: highlight;
+}
+
+a.blue {
+    Color: #1874cd;
+}
+
+a.blue:hover {
+    Color: highlighttext;
+    BACKGROUND: highlight;
+}
+
+a.black {
+    Color: highlighttext;
+    BACKGROUND: highlight;
+}
+
+
+
+.gridIndent {
+    padding-left: 40px;
+
+}
+
+.gridIndent2 {
+    width: 400px;
+
+}
+
+.hide {
+    display: none;
+}
+
+a.tipLDCon{
+    margin: 0px 5px 0px 5px;
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index:30;
+    background-color:#f0fff0;
+    color:#000;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    text-decoration:none;
+    font-weight: bold;
+    display: block;
+    float: center;
+
+}
+
+
+
+a.tipLDC{
+    margin: 0px 5px 0px 5px;
+
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index:10;
+    background-color:#016f54;
+    color:#fff;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    text-decoration:none;
+    font-weight: bold;
+    display: block;
+    float: center;
+
+}
+
+
+
+a.tipLDC:hover{z-index:30; background-color:#f0fff0; color:#000;}
+
+a.tipLDC span{display: none}
+
+.TextBoxLDCcomments {
+
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 370px; rows: 100px; padding-right: 0px; margin-right: 0px; background-color: #FAFAD2;
+}
+
+.TextBoxLDC {
+
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 40px; rows: 30px; padding-right: 0px; margin-right: 0px; background-color: #FAFAD2;
+}
+
+.TextBoxLDCRed {
+
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 40px; rows: 30px; padding-right: 0px; margin-right: 0px; 
+		background-color: #FAFAD2; border-style: solid; border-color: #ff0000; border-width: 2px;
+}
+.TextBoxLDCBlue {
+
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 40px; rows: 30px; padding-right: 0px; margin-right: 0px; 
+		background-color: #FAFAD2; border-style: solid; border-color: #0000ff; border-width: 2px;
+}
+
+
+.TextBoxLDCReadOnly {
+
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 40px; padding-right: 0px; margin-right: 0px; background-color: #ffffff;
+}
+
+.TextBoxLDCHidden {
+
+		display:none;
+		FONT-SIZE: 10pt; FONT-FAMILY: tahoma, arial; width: 40px; padding-right: 0px; margin-right: 0px; background-color: #ffffff;
+}
+
+.textboxComments {
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: tahoma, arial;
+    width: 535px;
+    height: 70px;
+    rows: 535px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: tahoma, arial;
+}
+
+.textboxCommentsReadOnly {
+    height: 70px;
+    rows: 535px;
+    width: 535px;
+    border-style: solid;
+    border-color: #ece9d8;
+    border-width: 1px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: tahoma, arial;
+}
+
+.textbox {
+    width: 168px;
+    FONT-SIZE: 10pt;
+
+}
+
+.textboxReadOnly {
+
+    width: 170px;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: tahoma, arial;
+    border-style: solid;
+    border-color: #ece9d8;
+    border-width: 1px;
+
+}
+
+.textboxError {
+    border-style: solid;
+    border-color: #ff0000;
+    border-width: 2px;
+}
+
+.labelError {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.textboxWarning {
+    border-style: solid;
+    border-color: #eaaf0f;
+    border-width: 2px;
+}
+
+.labelWarning {
+    color: #EAAF0F;
+    font-weight: bold;
+}
+
+
+.textboxUnits {
+    width: 90px;
+    FONT-SIZE: 10pt;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    color: #585c5b;
+}
+
+a.linkButtonRed{
+    margin: 0px 5px 0px 5px;
+
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index:10;
+    background-color:#1874cd;
+    color:#fff;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    text-decoration:none;
+    font-weight: bold;
+    display: block;
+    float: center;
+
+}
+
+a.linkButtonRed:hover{z-index:30; background-color: #F0F0FF; color:#000;}
+
+
+a.linkButtonRed span{display: none}
+
+a.btn{
+	margin: 0px 0px 10px 0px;
+	width: 100px;
+	font-family:'trebuchet ms',helvetica,sans-serif;
+	font-size: 13px;
+	z-index:10;
+	background-color:#7c4c28;
+	color:#fff;
+	padding-left:0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	text-decoration:none;
+    border-style: inset;
+	font-weight: bold;
+
+}
+
+a.btnHover {
+	z-index:30;
+	background-color:#d3ba9b;
+	color:#301F0F;
+	text-decoration: none;
+}
+
+a.info{
+    position:relative;
+    z-index:10;
+    color:#000;
+    }
+
+a.info:hover{z-index:30; background-color:#fff; text-decoration:none}
+
+a.info span{display: none}
+
+a.info:hover span{
+    z-index:30;
+    display:block;
+    position:absolute;
+    top:3em; left:2em; width:18em;
+    border:1px solid #ffd700;
+    background-color:#fafad2; color:#000;
+    text-align: center;
+    padding: 3px;
+}
+
+
+#content  {
+	width:780px;
+	margin:0px auto;
+	text-align:left;
+    background-color:#fff;
+    color:#000;
+    FONT-FAMILY: tahoma, arial;
+    z-index: 10;
+}
+
+.panelstyle {
+	width:730px;
+	margin:0px auto;
+	text-align:left;
+    background-color:#fff;
+    color:#000;
+    FONT-FAMILY: tahoma, arial;
+    z-index: 10;
+}
+
+.panelstyleOLD {
+	width:760px;
+	margin:0px auto;
+	text-align:left;
+    background-color:#fff;
+    color:#000;
+    FONT-FAMILY: tahoma, arial;
+    z-index: 10;
+}
+
+.displayMessage {
+    FONT-SIZE: 10pt;
+    z-index:40;
+    display:block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -134px;
+    margin-top: -120px;
+    width: 200px;
+    border:4px solid #016f54;
+    background-color:#fff;
+    color:#000;
+    text-align: center;
+    padding: 30px;
+    FONT-FAMILY: arial;
+    }
+
+.mainTR {
+
+    height: 26px;
+
+
+}
+
+.ddl {
+
+    FONT-SIZE: 10pt;
+    WIDTH: 174px;
+    FONT-FAMILY: Tahoma,Arial;
+    font-weight: normal;
+
+}
+
+.label {
+
+    color: #585c5b;
+
+    FONT-FAMILY: tahoma, arial;
+
+
+}
+
+
+textstyle {
+
+    color: #585c5b;
+
+    FONT-FAMILY: tahoma, arial;
+
+
+}
+
+
+label {
+
+    color: #585c5b;
+
+    FONT-FAMILY: tahoma, arial;
+
+
+}
+
+
+
+.BlackText {
+    color: #000000;
+}
+
+.RedText {
+    color: #ff0000;
+}
+
+.standardbullet {
+    list-style-type: disk;
+    list-style-position: outside;
+    padding-top: 4px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.tabledatabutton {
+
+    padding-bottom:  8px;
+}
+
+.fieldindicator {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: verdana;
+    color: #ff0000;
+}
+
+.fieldindicator2 {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: verdana;
+    color: #eaaf0f;
+}
+
+.fieldindicatorlabel {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    FONT-FAMILY: verdana;
+    color: #585c5b;
+ /* #585c5b; */
+}
+
+
+.DATAGRIDHEADER {
+    FONT-FAMILY: tahoma, arial;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: WHITE;
+
+}
+
+.DATAGRID {
+	FONT-FAMILY: tahoma, arial;
+    FONT-SIZE: 8pt;
+    color: black;
+}
+
+
+
+TABLE {
+    FONT-FAMILY: tahoma, arial;
+	BORDER-COLLAPSE: collapse
+}
+
+a.text:active, a.text:visited, a.text:link {
+	text-decoration: underline;
+    color: #016f54;
+}
+
+a.text:hover{
+	text-decoration: none;
+    color: #016f54;
+}
+
+a.plaintext:active, a.plaintext:visited, a.plaintext:link {
+	text-decoration: underline;
+    color: #585c5b;
+}
+
+a.plaintext:hover{
+	text-decoration: none;
+    color: #585c5b;
+}
+
+.smallspace {
+	FONT-WEIGHT: bold; FONT-SIZE: 2pt; FONT-FAMILY: verdana
+}
+.mediumspace {
+	FONT-WEIGHT: bold; FONT-SIZE: 6pt; FONT-FAMILY: verdana
+}
+
+.mainheader {
+	FONT-WEIGHT: 900;
+    FONT-SIZE: 8pt;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #016f54;
+    FONT-FAMILY: tahoma, arial;
+    TEXT-DECORATION: none
+}
+.subheader {
+    FONT-WEIGHT: 900;
+    FONT-SIZE: 8pt;
+    BACKGROUND: none transparent scroll repeat 0% 0%;
+    COLOR: #000000;
+    FONT-FAMILY: tahoma, arial;
+    TEXT-DECORATION: none
+}
+
+a.cal:hover {
+
+
+    width: 694px;
+
+    margin-right: auto;
+
+    margin-left: auto;
+
+    position: relative;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #DBDB79;
+
+    border-collapse:collapse;
+
+}
+
+
+
+
+
+A.button:link, A.button:active, A.button:visited {
+  float: left;
+  margin: 2px 5px 2px 0px;
+  padding: 2px;
+  width: 100px;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid black;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid black;
+  background: #cccccc;
+  text-align: center;
+  text-decoration: none;
+  FONT-FAMILY: tahoma, arial;
+  FONT-WEIGHT: bold;
+  FONT-SIZE: 8pt;
+  color: black;
+}
+
+A.button:hover {
+    float: left;
+    margin: 2px 5px 2px 0px;
+    padding: 2px;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid black;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid black;
+	FONT-SIZE: 8pt;
+    BACKGROUND: #0000EE;
+    WIDTH: 100px;
+    COLOR: #ffffff;
+    FONT-FAMILY: tahoma, arial;
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: none;
+
+}
+
+
+
+.fieldindicator {
+    FONT-WEIGHT: bold; FONT-SIZE: 10pt; FONT-FAMILY: verdana; color: #f00;
+}
+
+
+bullet {
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 20px;
+    FONT-FAMILY: verdana;
+    color: #0000ff;
+}
+
+a.linkText {
+
+color:#000;
+
+
+}
+
+a.linkText:hover {
+
+font-weight: bold;
+
+
+}
+/*
+a.linkButtonFocus{
+    margin: 0px 5px 0px 5px;
+
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index:30;
+    background-color:#f0fff0;
+    color:#000;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    text-decoration:none;
+    font-weight: bold;
+    display: block;
+    float: center;
+
+}
+
+a.linkButton{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index: 10;
+    background-color:#016f54;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    border-width: medium;
+    border-color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    float: none;
+
+}
+
+a.linkButton:hover{z-index:30; background-color:#f0fff0; color:#000;}
+
+a.linkButton span{display: none}
+
+*/
+
+
+a.linkButtonFocus
+{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100px;
+    font-family: arial;
+    font-size: 13px;
+    position: relative;
+    z-index: 30;
+    background-color: #f0fff0;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    border-width: medium;
+    border-color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    float: none;
+}
+
+
+a.linkButton{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index: 10;
+    background-color:#016f54;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    border-width: medium;
+    border-color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    float: none;
+}
+
+
+a.linkButton span
+{   
+    display: none
+}
+
+
+a.linkButton:hover
+{
+    z-index: 30;
+    background-color: #f0fff0;
+    color: #000;
+}
+
+
+a.linkButtonBlueFocus
+{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100px;
+    font-family: arial;
+    font-size: 13px;
+    position: relative;
+    z-index: 30;
+    background-color: #f0f0ff;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    border-width: medium;
+    border-color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    float: none;
+}
+
+a.linkButtonBlue{
+    margin: 0px 5px 0px 5px;
+    text-align: center;
+    width: 100px;
+    FONT-FAMILY: arial;
+    font-size: 13px;
+    position: relative;
+    z-index: 10;
+    background-color:#1874cd;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: outset;
+    border-width: medium;
+    border-color:  #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    float: none;
+}
+a.linkButtonBlue:hover
+{
+    z-index: 30;
+    background-color: #f0f0ff;
+    color: #000;
+}
+
+
+.structurePanel {
+    display:block;
+    position: fixed;
+    border: 1px solid #0cf;
+    background-color:#fff; color: #000;
+
+}
+
+.panelstyle-backup {
+
+
+	width:760px;
+	margin:0px auto;
+	text-align:left;
+	padding:15px;
+	border:1px dashed #333;
+	background-color:#eee;
+	}
+
+.labels {
+
+    FONT-SIZE: 8pt;
+
+    WIDTH: 205px;
+
+
+    FONT-FAMILY: Tahoma,Arial;
+    COLOR:  #585C5B;
+    HEIGHT: 13px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-weight: normal;
+    padding-left: 0px;
+}
+
+.mainfooter {
+	FONT-WEIGHT: 900;
+    FONT-SIZE: 7pt;
+    /* BACKGROUND: none transparent scroll repeat 0% 0%; */
+    COLOR: #016f54;
+    FONT-FAMILY: verdana, arial;
+    TEXT-DECORATION: none
+}
+
+
+.rbl input[type="radio"] {
+    margin-left: 7px;    
+    margin-right: 0px; 
+}
+
+.buttonTable {text-align: center; margin-bottom: 20px; margin-top: 20px; }

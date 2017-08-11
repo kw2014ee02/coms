@@ -1,0 +1,45 @@
+
+
+.order_lock{
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-size: 50px 51px;
+    cursor:pointer;
+    height: 51px;
+    width: 50px;
+    
+    top: 3%;
+    left:5%;
+  
+   
+    
+    /*
+    background-repeat: no-repeat;
+    background-size: 35px 26px;
+    cursor:pointer;
+    height: 26px;
+    width: 35px;
+    
+    top: 70%;
+    left: 0%; 
+*/
+    border: 0px solid red;
+    background-color: transparent;
+
+}
+
+#order_locked{
+    background-image: url('../pic/locked.png');
+    display: block;
+}
+
+#order_unlocked{
+    background-image: url('../pic/unlocked.png');
+    display: none;
+}
+
+.order_lock:hover {
+    border: 2px solid #999;
+    
+}

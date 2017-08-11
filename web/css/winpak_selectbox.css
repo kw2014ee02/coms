@@ -1,0 +1,179 @@
+/*
+.select {
+    position: relative;
+    display: inline-block;	
+    margin-bottom: 15px;
+}
+
+.select select {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #0088cc;
+    border: none;
+    border-radius: 0;
+    outline: 0;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    color: white;
+    background: #0088cc;
+    opacity: 0.6;
+}
+
+.select select:disabled {
+    pointer-events: none;
+    opacity: .5;
+    
+}
+
+.select__arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #0088cc transparent transparent transparent;
+
+}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+    border-top-color: #000;
+}
+
+.select select:disabled ~ .select__arrow {
+    border-top-color: #ccc;
+}
+
+
+#select_1 option{
+    background: #fff;
+    color:#0088cc;
+}
+
+#select_1{
+    position: absolute;
+    width: 30%;
+    top:22%;
+    left:70%;
+}
+
+*/
+
+
+.select {
+    position: relative;
+    display: block;
+    /*
+    margin-bottom: 15px;
+    */
+    border: 0px red solid;
+    height: 30px;
+
+
+
+
+    vertical-align: middle;
+
+}
+
+
+.select select {
+    display: block;
+    width: 100%;
+    /*
+    padding: 7px 7px;
+    */
+    cursor: pointer;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0px;
+    outline: 0;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    text-align: center;
+    text-align-last: center;
+}
+
+.select select::-ms-expand {
+    display: none;
+}
+
+.select select:hover,
+.select select:focus {
+    color: black;
+    background: transparent;
+    opacity: 1.0;
+
+
+}
+
+.select select:disabled {
+    pointer-events: none;
+    opacity: .5;
+
+}
+
+
+
+.select__arrow {
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+
+
+
+}
+.select select:hover ~ .select__arrow,
+.select select:focus ~ .select__arrow {
+    border-top-color: #000;
+}
+
+.select select:disabled ~ .select__arrow {
+    /*
+     border-top-color: #ccc;
+    */
+}
+
+.select_common {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+
+
+    display: none; /* ���鋇���膊㊤ご*/
+
+
+
+
+}
+
+

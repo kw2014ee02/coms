@@ -1,0 +1,12 @@
+#template_search{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: -0.5%;
+    width: 20%;
+    height: 30px;
+
+    border-top: 0px solid rgba(51, 255, 0, .8);
+    border-left: 0px solid rgba(51, 255, 0, .8);
+    border-right: 1px solid rgba(51, 255, 0, .8);
+    border-bottom: 1px solid rgba(51, 255, 0, .8);
+}

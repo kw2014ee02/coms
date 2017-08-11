@@ -1,0 +1,633 @@
+/* gif layout */
+#new_folder_gif{
+    position: absolute;   
+    left:60%;
+    top:20%;
+}
+
+#table_folder_gif{
+    position: absolute;   
+    left:30%;
+    top:30%;
+}
+
+#table_file_gif{
+    position: absolute;   
+    left:30%;
+    top:30%;
+}
+
+#slogan_gif{
+    position: absolute;   
+    left:60%;
+    top: 2%;
+    display: none;
+}
+
+#spinning_gif{
+    position: absolute;   
+    left: 100%;
+    top:10%;
+}
+
+/* beside table */
+
+.form_div{    
+    line-height:100px;
+    border:1px red solid;
+    background-color: white;
+    position:absolute;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:black;
+
+    border: 2px solid #ccc;
+    box-shadow: 0 1px 2px rgba(51, 255, 0, .8);
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bounceIn;
+    -moz-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#form_1 {
+    height:190px;
+    width:40%;
+    margin-left: 30%;   
+}
+
+.menu_title_1{
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border: 0px solid #73AD21;
+    line-height:10px;
+    color:  #999999
+}
+
+.menu_title_2{
+    position: absolute;
+    top: -6%;
+    left: 0;
+    width: 60%;
+    height: 10px;
+    border: 0px solid #73AD21;
+    line-height:10px;
+    color:  #999999
+}
+
+#new_order_btn{
+    position: absolute;
+    top: 68%;
+    left: 5%;   
+    width:10%;
+    height: 30px;
+}
+
+#new_order_btn_1{
+    position: absolute;
+    top: 10%;
+    left: 5%;   
+    width:10%;
+    height: 30px;
+}
+
+.primary_keys{
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    width:  20%;
+}
+
+.placeholder_class::-webkit-input-placeholder {
+    color: rgba(255,0,0, 0.5);
+}
+.placeholder_class:-ms-input-placeholder {
+    color: rgba(255,0,0, 0.3);
+}
+.placeholder_class::-moz-placeholder {
+    color: rgba(255,0,0, 0.5);
+}
+.placeholder_class:-moz-placeholder {
+    color: rgba(255,0,0, 0.5);
+}
+
+
+#Customer_name{
+    top: 10%;
+    left: 25%;  
+    width: 70%;
+}
+
+#new_order_number{
+    position: absolute;
+    text-align: right;
+    
+    top: 0%;
+    right: 55%; 
+    
+    
+    
+    height: 25px;
+    width: 20%;
+    
+    /*
+    font-size: larger;
+    
+    border-bottom: 2px #007357 solid;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    */
+    
+    border: 0px red solid;
+    
+    color: #007357;
+}
+
+#locked_by{
+    position: absolute;
+    text-align: right;  
+    top: 6%;
+    right: 55%;     
+    height: 25px;
+    width: 30%;    
+    border: 0px red solid;
+    color: #999999;
+}
+
+#Product_description{
+    top: 30%;
+    left: 25%; 
+    width: 70%;
+}
+
+#Customer_number{
+    top: 50%;
+    left: 75%; 
+}
+
+#Sale_number{
+    top: 70%;
+    left: 75%; 
+}
+
+#Item_number{
+    top: 50%;
+    left: 50%; 
+}
+
+#PO_NUMBER{
+    top: 70%;
+    left: 25%; 
+}
+
+#CA_FT_NPQ_NUMBER{
+    top: 70%;
+    left: 50%; 
+}
+
+#LOCK_FLAG{
+    top: 70%;
+    left: 5%;
+
+    height: 25px;
+    text-align: center;
+    position: absolute;
+    width:  5%;
+
+
+}
+
+#form_2 {
+    position: absolute;
+
+    height:300px;
+    width:40%;
+
+    margin-top: 60px;
+    left:30%;
+   
+
+    /*
+    margin-left: 30%;
+    margin-top: 4.6%;
+    */
+
+    /*
+    margin-top: 4.6%;
+    margin-left: 30%;
+    */
+}
+
+#form_3 {
+    height:560px;
+    width:20%;
+    margin-left: 75%;
+    overflow: auto;
+
+}
+
+#form_4 {
+    height:560px;
+    width:20%;
+    margin-left: 5%;
+
+
+}
+
+
+/* page layout */
+
+body {    
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#slogan {
+    width:80%;
+    height:60px;
+    line-height:60px;
+    border:0px red solid;
+    margin:0px auto;
+    position:relative;
+    margin-top: 1px;
+    /*
+     text-align: center;
+    */
+    vertical-align:middle;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:black;
+}
+
+.img1{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 0.8%;
+
+
+}
+
+
+
+
+.slogan_1{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0%;
+    float:left;
+    color:   #007357;
+    font-size: 30pt;
+    font-weight: 600;
+    /*
+    font-family:  cursive;
+    color: -webkit-linear-gradient(90deg, rgb(102,255,102) 30%, rgb(255, 255, 255) 70%);
+    
+    
+     text-shadow: 10px 15px 6px #009933;
+    */
+
+
+
+
+
+
+}
+
+
+.sign_in{
+    position: absolute;
+    float:right;
+    right: 5%;
+    top:0%;
+    /*
+    margin-top: 0.5%;
+    margin-left:85%;
+    */
+    font-size: 10pt;
+    color: #999999;
+
+
+}
+
+.sign_in:hover{
+
+    color: #009933;
+
+}
+
+#signed_user{
+    position: relative;
+    float:right;
+    right: 8%;
+    top:0%;
+    /*
+    margin-top: 0.5%;
+    margin-left:85%;
+    */
+    font-size: 10pt;
+    color: #999999;
+    display:none;
+}
+
+#log_out{
+    position: absolute;
+    float:right;
+    right: 2%;
+    top:0%;
+    /*
+     margin-top: 0.5%;
+   margin-left:89%;
+    */
+    font-size: 10pt;
+    color: #999999;
+    display:none;
+}
+
+#log_out:hover{
+
+    color: #009933;
+
+}
+
+#login_msg{
+    color: red;
+    font-size: small;
+    display: none;
+}
+
+
+/*
+#header {
+    width:100%;
+    height:100px;
+    line-height:100px;
+    border:1px red solid;
+    background-color: #27b7ec;
+    margin:0px auto;
+    position:relative;
+    margin-top: 0px;
+    text-align: center;
+    vertical-align:middle;
+    font-size: 30pt;
+    font-family: tahoma, arial;
+    color:white;
+}
+
+#header:before {
+    content: "Winpak Innovation version 1.0";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+*/
+
+#header {
+    width:99.8%;
+    height:80px;
+    line-height:60px;
+    border:0px red solid;
+    background-color: #00A250;
+    position:relative;
+    margin-top: 1px;
+    margin-left: 1px;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:white;
+}
+
+.txt1 {
+    display: inline-block;
+    position:absolute;
+    padding-left: 0%;
+
+}
+
+.header_txt1{
+    color:white;
+    position: absolute;
+    font-weight: bold;
+    margin: 0 auto;
+    left:40%;
+}
+
+#middle {     
+    width:99.8%;
+    height:600px;
+    line-height:600px;
+    border:0px red solid;
+    background-color: white;
+    position:absolute;
+    margin-top: 1%;
+    margin-left: 1px;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:black;
+    
+   
+
+
+}
+
+#mask {
+    width:72%;
+    height:600px;
+    line-height:10px;
+    border: 0px red solid;
+    background-color: rgba(255,255,255,1.0);
+    position: absolute; /* Stay in place */
+    margin-top: 1%;
+    margin-left: 1px;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:black;
+
+    z-index:1;
+}
+
+.middle_div{
+
+    top:5%;
+
+    height:590px;
+    line-height:590px;
+    border:1px red solid;
+    background-color: white;
+    position:absolute;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:black;
+
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px rgba(51, 255, 0, .8);
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bounceIn;
+    -moz-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+#middle_div_1 {
+    width:30%;
+    margin-top: 1px;
+    margin-left: 36%;   
+}
+
+#middle_div_2 {
+    width:20%;
+    margin-top: 1px;
+    margin-left: 15%;
+}
+
+#middle_div_3 {
+    width:20%;
+    margin-top: 1px;
+    margin-left: 67%;
+}
+
+.img2{
+    position: absolute;   
+}
+.img2:mouseover{
+    border-radius: 1px;
+}
+#middle_div_1_pic {
+    width:100px;
+    height:100px;
+    border:0px #33ff00 solid;
+    background-color: white;
+    position:relative;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+#middle_div_1_pic:hover {
+    border-radius: 50px;
+    border:1px #33ff00 solid;
+}
+
+
+
+
+.box_menu{
+    background-color: #27b7ec;
+    color: white;
+    width: 10%;
+    height: 150px;
+    padding: 1%;
+    border: 0px solid #84563c;
+    float: left;
+    margin-left: 6%;
+    font-family: "Times New Roman Bold", Times, serif;              
+    font-size: 20pt;
+    font-weight:  900;
+    margin-top: 1%;
+    text-align: center;
+    /*
+   
+     padding-top: 20%;
+    */
+    line-height: 150px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.box_menu:hover{
+    background: #45c0ef;
+    color:white;
+}
+
+#footer {
+    width:99.8%;
+    height:160px;
+    /*
+    line-height:200px;
+    */
+    border:0px red solid;
+    background-color: #00A250;
+    position: absolute;
+    margin-top: 660px;
+    margin-left: 1px;
+    font-size: 100%;
+    font-family: tahoma, arial;
+    color:white;
+
+    text-align:center;
+}
+
+.footer_text{
+    position: absolute;
+    margin-top: 1%;
+    width: 20%;
+    height:80%;
+    border-radius: 10px;
+    text-align:left;
+    padding-left: 2%;
+    border:2px white solid;
+    word-wrap:break-word;
+    display: none;
+}
+
+#footer_text_1{
+    margin-left: 11%;
+}
+
+#footer_text_2{
+    margin-left: 40%;
+}
+
+#footer_text_3{
+    margin-left: 69%;
+}
+
+#footer_text_1:hover{
+    background-color: #45c0ef;
+}
+
+#footer_text_2:hover{
+    background-color: #45c0ef;
+}
+
+#footer_text_3:hover{
+    background-color: #45c0ef;
+}
+
+
+#Customer_name_1{
+    position: absolute;
+    top:8%;
+    left:5%;
+}
+
+#Item_number_1{
+    position: absolute;
+    top:50%;
+    left:5%;
+}
+

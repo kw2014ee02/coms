@@ -1,0 +1,12 @@
+#idle_page{
+    border: 1px red solid;
+    width: 20%;
+    height: 20px;
+    line-height: 20px;
+    display: none;
+}
+
+#SecondsUntilExpire { 
+    background-color: yellow; 
+    color:red;
+}

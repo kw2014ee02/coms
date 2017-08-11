@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">       
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+        <link rel="stylesheet" href="css/jquery_popup.css" />
+        <script src="js/jquery_popup.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                $("#test_1").click(function (e) {
+                    //alert("goooo");
+                    $("#logindiv").css("display", "block");
+
+                });
+            });
+
+        </script>
+
+        <style>
+            #test_1{
+                width:10%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="submit" id="test_1" name="test_1" class="test_1" />
+        <div id="mainform">
+
+
+        </div>
+
+        <!--Contact Form -->
+        <div id="contactdiv">
+
+        </div>
+
+        <!--Login Form -->
+        <div id="logindiv" >
+            <form class="form" action="#" id="login">
+                <img src="pic/cancel.jpg" class="img" id="cancel"/>
+                <h3>Login Form</h3>
+                <hr/><br/>
+                <label>Username : </label>
+                <br/>
+                <input type="text" id="username" placeholder="Ex -john123"/><br/>
+                <br/>
+                <label>password : </label>
+                <br/>
+                <input type="password" id="password" placeholder="************"/><br/>
+                <br/>
+                <input type="button" id="loginbtn" value="Login"/>
+                <input type="button" id="cancel" value="Cancel"/>
+                <br/>
+
+            </form>
+
+        </div>
+    </body>
+</html>

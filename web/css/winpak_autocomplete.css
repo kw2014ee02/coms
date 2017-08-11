@@ -1,0 +1,266 @@
+
+
+/* 
+    targets the first result's <a> element, 
+    remove the a at the end to target the li itself 
+*/
+/* 
+ul.ui-autocomplete.ui-menu li:first-child a{
+    color:yellow;
+}
+*/
+
+
+/* this for redmond theme */
+
+input.order_search{
+    height: 30px;
+    width: 15%;
+    border:1px #999999 solid;
+    position: absolute;
+    margin-top: 1%;
+    margin-left:70%;
+    background: url(pic/innovation.jpg) no-repeat right center;
+    background-color: white;
+    color: #84563c;
+    font-size: 12pt;
+    text-align: center;
+    
+}
+
+input.order_search:focus{
+    /*
+    border:2px red solid;
+    
+}
+
+input.order_search:active {
+    /*
+    box-shadow: 0 0 30px #96f226
+    */
+}
+
+input.tags{
+    height: 40px;
+}
+
+.ui-autocomplete-input.order_search{
+
+    height: 40px;
+    width: 16%;
+    position: relative;
+
+    color: #84563c;
+    margin-top:2%;
+    margin-left:6%;
+
+    border-radius: 10px;
+    border-top: none;
+    border-left: none;
+    border-bottom-color: #0ee4f9;
+
+    /*
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+     border-radius: 25px;
+    */
+
+}
+
+
+
+/*
+.ui-autocomplete-input.search{
+    height:50px;
+    width: 200px;
+    position: relative;
+    top: -20px;
+    left:300px;
+    color: blueviolet;
+
+
+
+    
+    border-bottom: dashed wheat;
+    border-style: groove;
+    
+    
+
+}
+*/
+.ui-autocomplete {
+
+    max-height: 30%;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+
+    /* prevent horizontal scrollbar */
+    /* overflow-x: hidden;
+     border-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    float: left;
+    display: none;
+    min-width: 160px;
+    max-width: 200px;
+    _width: 160px;
+    padding: 4px 0;
+    margin: 2px 0 0 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-color: #ccc;
+
+    border-style: solid;
+    border-width: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding-box;
+    background-clip: padding-box;
+    *border-right-width: 2px;
+    *border-bottom-width: 2px;
+
+
+}
+
+.ui-autocomplete .ui-menu-item.ui-state-focus{
+    /* selected <a> */
+    color: white;
+    border-color: #84563c;
+    background: #84563c;
+
+}
+
+/*   for redmond theme
+.ui-menu .ui-menu-item a.ui-state-hover{
+    background: #84563c;
+    border:none;
+    color:white;
+        width:200px;
+}
+*/
+
+.ui-menu .ui-menu-item:hover{
+    background: #84563c;
+    border:none;
+    color:white;
+    width:200px;
+    
+    /* 
+    */
+}
+
+.ui-menu .ui-menu-item{
+
+    
+
+}
+
+
+
+
+
+
+
+
+.ui-autocomplete a.ui-corner-all.sbiAnchor:hover{
+    /* 
+   background: blue;
+    */
+    ;
+}
+.ui-autocomplete-input:focus, .ui-autocomplete a.ui-corner-all.sbiAnchor:hover {
+    /*
+     background: blue;
+    */
+
+}
+
+/* IE 6 doesn't support max-height
+ * we use height instead, but this forces the menu to always be this tall
+ */
+* html .ui-autocomplete {
+    height: 300px;
+}
+
+
+
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:  #ccc;
+    font-size: 15px;
+
+
+    /*
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: cursive;
+    */
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:  #ccc;
+    font-size: 15px;
+
+    /*
+    color:    #0ee4f9;
+    font-family: cursive;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    */
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:  #ccc;
+    font-size: 15px;
+
+    /*
+   color:    #0ee4f9;
+   font-family: cursive;
+   font-size: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+    */
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:  #ccc;
+    font-size: 15px;
+
+    /*   
+   color:    #0ee4f9;
+   font-family: cursive;
+   font-size: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: bold;
+    */
+}
+
+/*
+#city_from_search::-webkit-input-placeholder { // WebKit browsers 
+    color:    #27b7ec;
+}
+#city_from_search:-moz-placeholder { // Mozilla Firefox 4 to 18 
+    color:    #27b7ec;
+}
+#city_from_search::-moz-placeholder { // Mozilla Firefox 19+ 
+    color:    #27b7ec;
+}
+#city_from_search:-ms-input-placeholder { // Internet Explorer 10+ 
+    color:    #27b7ec;
+}
+*/

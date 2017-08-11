@@ -1,0 +1,18 @@
+
+#table_file_list_del{
+    position: absolute;
+    width:18%;
+    height:25px;
+    top: 0.5%;
+    left:80%;
+    
+    display:none;
+
+}
+
+#table_order_refresh{
+    position: absolute;    
+    height:25px;
+    top: 0.5%;
+    left:70%;
+}

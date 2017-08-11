@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">       
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
+        <script src="js/test_1_jsonp.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $("#myButton_jsonp2").click(function () {
+
+                    // alert("gggg");
+                    var name = "dad";
+                    $.ajax({
+                        type: "GET",
+                        // url: "Item_in_transit_by_jsonp",
+                        url: "http://localhost:8080/winpak/user_signin",
+                        data: {
+                            name: name
+                        },
+                        dataType: "jsonp",
+                        contentType: "application/json",
+                        jsonp: "jsonp_test", //传递给请求处理程序或页面的，用以获得jsonp回调函数名的参数名(一般默认为:callback)
+                        //jsonpCallback: "?", //自定义的jsonp回调函数名称，默认为jQuery自动生成的随机函数名，也可以写"?"，jQuery会自动为你处理数据
+                        jsonpCallback: "myjsonpcallbacknameinalllowercase",
+                        beforeSend: function () {
+                            $(".loading").html("数据加载中.");
+                        },
+                        error: function () {
+                            alert('Can not retrieve jsonp data');
+                        },
+                        complete: function () {
+
+
+                            $("#tbl tr").hover(
+                                    function () {
+                                        $(this).css("background", "yellow");
+                                        $(this).css("color", "black");
+                                    },
+                                    function () {
+                                        $(this).css("background", "");
+                                    }
+                            );
+                            $("#tbl tbody tr:odd").addClass("odd");
+                            $("#tbl tbody tr:even").addClass("even");
+                        },
+                        success: function (data, textStatus, jqXHR) {
+
+                            alert(data);
+                            alert(data[1]);
+                            tableCreate(data);
+                        }
+
+                    });
+                });
+
+                $("#myButton_jsonp4").click(function () {
+                    alert("jsonp test");
+                    var url = 'http://www.jquery4u.com/scripts/jquery4u.settings.json';
+                    $.ajax({
+                        type: 'GET',
+                        url: url,
+                        async: false,
+                        contentType: "application/json",
+                        dataType: 'jsonp'
+                    });
+                });
+            });
+
+        </script>
+
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input id="myButton_jsonp" type="button" value="test2_jsonp" />
+        <input id="myButton_jsonp2" type="button" value="test32_jsonp" />
+        <input id="myButton_jsonp4" type="button" value="test4_jsonp" />
+        <div id="myDIV">
+            <table id="tbl" class="scroll"></table>
+        </div>
+    </body>
+</html>
